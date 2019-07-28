@@ -396,6 +396,32 @@ function generateForm(spec) {
     });
 }
 
+
+
+function insertHeading(heading) {
+    document.getElementById("form-container").innerHTML += '<h1>'+heading+'</h1>';
+}
+
+function insertCheckbox(item) {
+    let formContainer = document.getElementById("form-container");
+    let checkbox = document.createElement("input");
+    
+
+    checkbox.type = "checkbox";
+    checkbox.name = item.name;
+    checkbox.value = "value";
+    checkbox.id = item.name;
+          
+    let label = document.createElement("label");
+    label.htmlFor = item.name;
+    label.className = "checkbox";
+ 
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(item.short_label));
+   
+    formContainer.appendChild(label);
+}
+
 function generateReport(spec, form) {
     spec.forEach(function (section) {
         const sections = [];
@@ -407,30 +433,7 @@ function generateReport(spec, form) {
         writeSentence(section, selections);
     });
 }
-
 function getAnswer(item) {
     console.log("hello");
 }
-
-function insertHeading(heading) {
-    document.getElementById("form-container").innerHTML += '<h1>'+heading+'</h1>';
-}
-
-function insertCheckbox(item) {
-    let myCheckbox = document.getElementById("form-container");
-    let checkbox = document.createElement("input");
-
-    checkbox.type = "checkbox";
-    checkbox.name = item.name;
-    checkbox.value = "value";
-    checkbox.id = item.name;
-     
-    let label = document.createElement("label");
-    label.htmlFor = item.name;
-
-    label.appendChild(document.createTextNode(item.short_label));
-    myCheckbox.appendChild(checkbox);
-    myCheckbox.appendChild(label);
-}
-
 generateForm(spec);

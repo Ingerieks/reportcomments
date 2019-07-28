@@ -139,9 +139,10 @@ h2 {
     font-size: 25px;
     
 }
- .lists {
-     font-family: 'Darker Grotesque', sans-serif;
-     font-size: 23px;
+ .checkbox {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 23px;
     font-weight: 250;
+    display: block;
  }
 
