@@ -417,7 +417,7 @@ function insertHeading(heading) {
 }
 
 function insertCheckbox(item) {
-    document.getElementById("checkboxes").innerHTML += '<input type="checkbox">'
+    console.log("checkbox-options");
 }
 
 generateForm(spec);
