@@ -396,8 +396,6 @@ function generateForm(spec) {
     });
 }
 
-
-
 function insertHeading(heading) {
     document.getElementById("form-container").innerHTML += '<h1>'+heading+'</h1>';
 }
