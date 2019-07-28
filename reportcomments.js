@@ -417,7 +417,20 @@ function insertHeading(heading) {
 }
 
 function insertCheckbox(item) {
-    console.log("checkbox-options");
+    let myCheckbox = document.getElementById("form-container");
+    let checkbox = document.createElement("input");
+
+    checkbox.type = "checkbox";
+    checkbox.name = item.name;
+    checkbox.value = "value";
+    checkbox.id = item.name;
+     
+    let label = document.createElement("label");
+    label.htmlFor = item.name;
+
+    label.appendChild(document.createTextNode(item.short_label));
+    myCheckbox.appendChild(checkbox);
+    myCheckbox.appendChild(label);
 }
 
 generateForm(spec);
