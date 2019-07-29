@@ -11,7 +11,7 @@ const spec = [{
         {
             "name": "funny",
             "short_label": "Funny",
-            "full_label": "funny",
+            "full_label": "has a great sense of humor",
         },
         {
             "name": "thoughtful",
@@ -435,3 +435,12 @@ function getAnswer(item) {
     console.log("hello");
 }
 generateForm(spec);
+
+function changeIt()
+{
+var i = 1;
+my_div.innerHTML = my_div.innerHTML +"<br><input type='textarea' name='mytext'+ i>"
+
+}
+
+
