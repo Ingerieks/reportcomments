@@ -420,9 +420,9 @@ function insertCheckbox(item) {
     formContainer.appendChild(label);
 }
 
-function generateReport(spec, form) {
+function generateReport(spec) {
     spec.forEach(function (section) {
-        const sections = [];
+        const selections = [];
 
         section.items.forEach(function (item) {
             const answer = getAnswer(item);
@@ -434,13 +434,12 @@ function generateReport(spec, form) {
 function getAnswer(item) {
     console.log("hello");
 }
-generateForm(spec);
 
-function changeIt()
-{
-var i = 1;
-my_div.innerHTML = my_div.innerHTML +"<br><input type='textarea' name='mytext'+ i>"
-
+function writeSentence(section, selections) {
+    console.log("hi")
 }
 
+generateForm(spec);
+
+generateReport(spec);
 
