@@ -418,6 +418,11 @@ function insertCheckbox(item) {
     label.appendChild(document.createTextNode(item.short_label));
    
     formContainer.appendChild(label);
+
+    checkbox.addEventListener("change", (event) => {
+        generateReport(spec);
+    })
+
 }
 
 function generateReport(spec) {
@@ -425,21 +430,21 @@ function generateReport(spec) {
         const selections = [];
 
         section.items.forEach(function (item) {
-            const answer = getAnswer(item);
-            if (answer) selections.push(answer);
+            const checkbox = getCheckbox(item);
+            if (checkbox.checked) selections.push(item);
         })
         writeSentence(section, selections);
     });
 }
-function getAnswer(item) {
-    console.log("hello");
+function getCheckbox(item) {
+    return document.getElementById(item.name);
 }
 
 function writeSentence(section, selections) {
-    console.log("hi")
+    console.log(section, selections);
 }
 
 generateForm(spec);
 
-generateReport(spec);
+
 
