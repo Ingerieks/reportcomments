@@ -391,16 +391,22 @@ function generateForm(spec) {
         insertHeading(section.section_label);
 
         section.items.forEach(function (item) {
-            insertCheckbox(item);
+            insertCheckbox(section, item);
         });
     });
+
+    const formContainer = document.getElementById("form-container");
+    formContainer.addEventListener("change", () => {
+        generateReport(spec);
+        //console.log(section.name, item.name);
+    })
 }
 
 function insertHeading(heading) {
     document.getElementById("form-container").innerHTML += '<h1>'+heading+'</h1>';
 }
 
-function insertCheckbox(item) {
+function insertCheckbox(section, item) {
     let formContainer = document.getElementById("form-container");
     let checkbox = document.createElement("input");
     
@@ -408,7 +414,7 @@ function insertCheckbox(item) {
     checkbox.type = "checkbox";
     checkbox.name = item.name;
     checkbox.value = "value";
-    checkbox.id = item.name;
+    checkbox.id = section.name + "-" + item.name;
           
     let label = document.createElement("label");
     label.htmlFor = item.name;
@@ -418,10 +424,8 @@ function insertCheckbox(item) {
     label.appendChild(document.createTextNode(item.short_label));
    
     formContainer.appendChild(label);
-
-    checkbox.addEventListener("change", (event) => {
-        generateReport(spec);
-    })
+     //console.log(section.name, item.name);
+    
 
 }
 
@@ -430,14 +434,14 @@ function generateReport(spec) {
         const selections = [];
 
         section.items.forEach(function (item) {
-            const checkbox = getCheckbox(item);
+            const checkbox = getCheckbox(section, item);
             if (checkbox.checked) selections.push(item);
         })
         writeSentence(section, selections);
     });
 }
-function getCheckbox(item) {
-    return document.getElementById(item.name);
+function getCheckbox(section, item) {
+    return document.getElementById(section.name + "-" + item.name);
 }
 
 function writeSentence(section, selections) {
