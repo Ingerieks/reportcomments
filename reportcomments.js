@@ -446,8 +446,10 @@ function getCheckbox(section, item) {
 
 function writeSentence(section, selections) {
     const combined = selections.map(sel => sel.full_label).join(",");
+    const sentence = section.template(combined);
     console.log(combined);
-    
+    const text = document.getElementById('textArea');
+    text.value = sentence; 
 }
 
 generateForm(spec);
