@@ -1,7 +1,7 @@
 const spec = [{
     "name": "characteristics",
     "section_label": "Characteristics",
-    "template": "is particularly {{ combined }}",
+    "template": (combined) =>  `is particularly ${combined}`,
     "items": [
         {
             "name": "kind",
@@ -65,7 +65,7 @@ const spec = [{
 {
     "name": "strengths",
     "section_label": "Strengths",
-    "template": "has made good progress in {{ combined }}.",
+    "template": (combined) =>  `has made good progress in ${combined}.`,
     "items": [
         {
             "name": "spelling",
@@ -162,7 +162,7 @@ const spec = [{
 {
     "name": "weaknesses",
     "section_label": "Weaknesses",
-    "template": "Next term I would like to see him work on {{ combined }} more often.",
+    "template": (combined) =>  `Next term I would like to see him work on ${combined} more often.`,
     "items": [
         {
             "name": "spelling",
@@ -274,7 +274,7 @@ const spec = [{
 {
     "name": "focus_area",
     "section_label": "Focus Area",
-    "template": "is finding {{ combined }} challenging.",
+    "template": (combined) => `is finding ${combined} challenging.`,
     "items": [
         {
             "name": "spelling",
@@ -445,7 +445,9 @@ function getCheckbox(section, item) {
 }
 
 function writeSentence(section, selections) {
-    console.log(section, selections);
+    
+    
+    
 }
 
 generateForm(spec);
