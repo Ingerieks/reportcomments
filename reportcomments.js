@@ -398,9 +398,9 @@ function generateForm(spec) {
     const formContainer = document.getElementById("form-container");
     formContainer.addEventListener("change", () => {
         generateReport(spec);
-        //console.log(section.name, item.name);
-    })
-}
+        
+    });
+};
 
 function insertHeading(heading) {
     document.getElementById("form-container").innerHTML += '<h1>'+heading+'</h1>';
@@ -445,8 +445,8 @@ function getCheckbox(section, item) {
 }
 
 function writeSentence(section, selections) {
-    
-    
+    const combined = selections.map(sel => sel.full_label).join(",");
+    console.log(combined);
     
 }
 
