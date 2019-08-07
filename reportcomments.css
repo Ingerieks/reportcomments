@@ -168,5 +168,10 @@ h2 {
      margin-bottom: 10px;
      
  }
+
+ *.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none
+}
  
 
