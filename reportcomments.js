@@ -162,7 +162,7 @@ const spec = [{
 {
     "name": "weaknesses",
     "section_label": "Weaknesses",
-    "template": (combined) =>  `Next term I would like to see him work on ${combined} more often.`,
+    "template": (combined) =>  `is finding ${combined} challenging and would benefit from more practice in this area.`,
     "items": [
         {
             "name": "spelling",
@@ -274,7 +274,7 @@ const spec = [{
 {
     "name": "focus_area",
     "section_label": "Focus Area",
-    "template": (combined) => `is finding ${combined} challenging.`,
+    "template": (combined) => `Next term, I would like to see him working on ${combined} .`,
     "items": [
         {
             "name": "spelling",
@@ -426,33 +426,48 @@ function insertCheckbox(section, item) {
     formContainer.appendChild(label);
      //console.log(section.name, item.name);
     
-
 }
 
 function generateReport(spec) {
-    spec.forEach(function (section) {
+    const sentences = spec.map(function (section) {
         const selections = [];
 
         section.items.forEach(function (item) {
             const checkbox = getCheckbox(section, item);
             if (checkbox.checked) selections.push(item);
-        })
-        writeSentence(section, selections);
+        });
+       
+        return writeSentence(section, selections);
+        
     });
+
+    const text = document.getElementById('textArea');
+    text.value = sentences.join("\n"); 
 }
+
+
+
 function getCheckbox(section, item) {
     return document.getElementById(section.name + "-" + item.name);
+   
 }
+
 
 function writeSentence(section, selections) {
     const combined = selections.map(sel => sel.full_label).join(",");
     const sentence = section.template(combined);
-    console.log(combined);
-    const text = document.getElementById('textArea');
-    text.value = sentence; 
+    
+    return sentence;
+    
 }
+
+
 
 generateForm(spec);
 
+
+//reduce of map
+//return sentence
+//eventHandler moet iets skryf wat se if valid generate report otherwise show what invalid
 
 
