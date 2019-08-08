@@ -1,7 +1,7 @@
 const spec = [{
     "name": "characteristics",
     "section_label": "Characteristics",
-    "template": (combined) =>  `(name) is a very ${combined}boy.`,
+    "template": (combined) =>  `(name) is a very ${combined} boy.`,
     "items": [
         {
             "name": "kind ",
@@ -70,99 +70,95 @@ const spec = [{
 {
     "name": "strengths",
     "section_label": "Strengths",
-    "template": (combined) =>  `He has a good grasp of the concepts taught in ${combined}.`,
+    "template": (combined) =>  `He ${combined} .`,
     "items": [
+        {
+            "name": "spelling tests",
+            "short_label": "Spelling Tests",
+            "full_label": "consistently does well in his weekly phonic tests",
+        },
         {
             "name": "spelling",
             "short_label": "Spelling",
-            "full_label": "spelling",
+            "full_label": "applies his phonetic knowledge in every day writing tasks with ease",
         },
+        
         {
             "name": "reading",
             "short_label": "Reading",
-            "full_label": "reading",
+            "full_label": "is able to read fluently and takes a variety punctuation marks into account while reading aloud",
         },
         {
             "name": "reading_comprehension",
             "short_label": "Reading Comprehension",
-            "full_label": "reading comprehension",
+            "full_label": "is able to apply different reading strategies to find and understand the meaning of the text",
         },
         {
             "name": "creative_writing",
             "short_label": "Creative Writing",
-            "full_label": "creative writing",
+            "full_label": "is a creative writer and I always enjoy reading his detailed writing tasks",
         },
         {
             "name": "language_use",
             "short_label": "Language Use",
-            "full_label": "language use",
+            "full_label": "has a good grasp of parts of speech, punctuation marks and he applied these skills in his everyday writing tasks with ease",
         },
         {
             "name": "speaking",
             "short_label": "Speaking",
-            "full_label": "speaking",
+            "full_label": "is a very confident speaker who delivers his orals with enthusiasm and excellent voice projection",
         },
         {
             "name": "number_operations",
             "short_label": "Number Operations",
-            "full_label": "number operations",
+            "full_label": "has a good grasp of the number concepts taught and he is able to apply a variety of strategies to solve different problems",
         },
         {
             "name": "patterns",
             "short_label": "Patterns",
-            "full_label": "patterns",
+            "full_label": "does exceptionally well in identifying number-, growing- and moving patterns",
         },
         {
             "name": "space_and_shape",
             "short_label": "Space and Shape",
-            "full_label": "space and shape",
+            "full_label": "is able to identify a variety of 3-D objects and 2-D shapes and recall object properties with ease",
         },
         {
             "name": "measurement",
             "short_label": "Measurement",
-            "full_label": "measurement",
+            "full_label": "is able to read digital time as well as an analogue clock with ease",
         },
         {
             "name": "data_handling",
             "short_label": "Data Handling",
-            "full_label": "data handling",
+            "full_label": "does well in solving a variety of problems related to data handling",
         },
         {
             "name": "afrikaans_reading",
             "short_label": "Afrikaans Reading",
-            "full_label": "afrikaans reading",
+            "full_label": "can read fluently in Afrikaans and has excellent pronunciation and sight word recognition",
         },
         {
             "name": "afrikaans_spelling",
             "short_label": "Afrikaans Spelling",
-            "full_label": "afrikaans spelling",
+            "full_label": "does well in his weekly Afrikaans phonic tests and he is able to apply these skills in his every day Afrikaans writing",
         },
         {
             "name": "afrikaans_writing",
             "short_label": "Afrikaans Writing",
-            "full_label": "afrikaans writing",
+            "full_label": "is a very creative writer and he always goes the extra mile when completing writing tasks in Afrikaans",
         },
         {
             "name": "afrikaans_speaking",
             "short_label": "Afrikaans Speaking",
-            "full_label": "afrikaans speaking",
-        },
-        {
-            "name": "art",
-            "short_label": "Art",
-            "full_label": "art",
-        },
-        {
-            "name": "music",
-            "short_label": "Music",
-            "full_label": "music",
+            "full_label": "delivered his Afrikaans oral with ease and makes use excellent pronunciation in Afrikaans",
         }
     ]
 },
 {
     "name": "progress",
     "section_label": "Progressed in",
-    "template": (combined) =>  `He is making good progress in ${combined} and he is learning to apply new skills learned in this area, independently.`,
+    "template": (combined) =>  `He is making good progress in ${combined} and he is learning to apply new skills learned in these areas independently.`,
     "items": [
         {
             "name": "spelling",
@@ -416,12 +412,12 @@ const spec = [{
         {
             "name": "measurement",
             "short_label": "Measurement",
-            "full_label": "practise telling the time daily, working with number lines and using different measurement tools",
+            "full_label": "practise telling the time daily, working with number lines and using different measurement tools more regularly",
         },
         {
             "name": "word_problems",
             "short_label": "Word Problems",
-            "full_label": "work on solving word problems by practising and applying different strategies taught in class",
+            "full_label": "work on solving word problems independently, by practising and applying the different strategies taught in class",
         },
         {
             "name": "afrikaans_reading",
@@ -492,8 +488,8 @@ const spec = [{
         },
         {
             "name": "Show me your best every day. Well done",
-            "short_label": "!Show me your best every day. Well done",
-            "full_label": "!Show me your best every day, (name). Well done!",
+            "short_label": "Show me your best every day. Well done",
+            "full_label": "Show me your best every day, (name). Well done!",
         },
         {
             "name": "You can do it",
@@ -568,7 +564,7 @@ function generateReport(spec) {
     });
 
     const text = document.getElementById('textArea');
-    text.value = sentences.join("\n"); 
+    text.value = sentences.join(" "); 
 }
 
 
