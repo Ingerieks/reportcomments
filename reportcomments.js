@@ -1,7 +1,7 @@
 const spec = [{
     "name": "characteristics",
     "section_label": "Characteristics",
-    "template": (combined) =>  `(name) is a very ${combined} boy.`,
+    "template": (context) =>  `${context.name} is a very ${context.combined} boy.`,
     "items": [
         {
             "name": "kind ",
@@ -70,7 +70,7 @@ const spec = [{
 {
     "name": "strengths",
     "section_label": "Strengths",
-    "template": (combined) =>  `He ${combined} .`,
+    "template": (context) =>  `He ${context.combined} .`,
     "items": [
         {
             "name": "spelling tests",
@@ -158,7 +158,7 @@ const spec = [{
 {
     "name": "progress",
     "section_label": "Progressed in",
-    "template": (combined) =>  `He is making good progress in ${combined} and he is learning to apply new skills learned in these areas independently.`,
+    "template": (context) =>  `He is making good progress in ${context.combined} and he is learning to apply new skills learned in these areas independently.`,
     "items": [
         {
             "name": "spelling",
@@ -250,7 +250,7 @@ const spec = [{
 {
     "name": "weaknesses",
     "section_label": "Weaknesses",
-    "template": (combined) =>  `(name) is still finding ${combined} challenging and he will benefit from practicing these concepts daily.`,
+    "template": (context) =>  `${context.name} is still finding ${context.combined} challenging and he will benefit from practicing these concepts daily.`,
     "items": [
         {
             "name": "spelling",
@@ -357,7 +357,7 @@ const spec = [{
 {
     "name": "focus_area",
     "section_label": "Focus Area",
-    "template": (combined) => `Next term, I would like to see him ${combined} .`,
+    "template": (context) => `Next term, I would like to see him ${context.combined} .`,
     "items": [
         {
             "name": "spelling",
@@ -464,42 +464,42 @@ const spec = [{
 {
     "name": "sign_off",
     "section_label": "Sign Off",
-    "template": (combined) => ` ${combined} `,
+    "template": (context) => ` , ${context.name}! `,
     "items": [
         {
             "name": "Keep up the hard work",
             "short_label": "Keep up the hard work",
-            "full_label": "Keep up the hard work, (name)!",
+            "full_label": "Keep up the hard work",
         },
         {
             "name": "Supera Moras",
             "short_label": "Supera Moras",
-            "full_label": "Supera Moras, (name)!",
+            "full_label": "Supera Moras",
         },
         {
             "name": "Reach for the stars",
             "short_label": "Reach for the stars",
-            "full_label": "Reach for the stars, (name)!",
+            "full_label": "Reach for the stars",
         },
         {
             "name": "Well done on a successful term",
             "short_label": "Well done on a successful term",
-            "full_label": "Well done on a successful term, (name)!",
+            "full_label": "Well done on a successful term",
         },
         {
             "name": "Show me your best every day. Well done",
             "short_label": "Show me your best every day. Well done",
-            "full_label": "Show me your best every day, (name). Well done!",
+            "full_label": "Show me your best every day",
         },
         {
             "name": "You can do it",
             "short_label": "You can do it",
-            "full_label": "You can do it, (name)!",
+            "full_label": "You can do it",
         },
         {
             "name": "Keep trying your best",
             "short_label": "Keep trying your best",
-            "full_label": " Keep trying your best, (name)!",
+            "full_label": " Keep trying your best",
         }
        
      ]
@@ -576,8 +576,10 @@ function getCheckbox(section, item) {
 
 
 function writeSentence(section, selections) {
-    const combined = selections.map(sel => sel.full_label).join(",");
-    const sentence = section.template(combined);
+    const context = {};
+    context.combined = selections.map(sel => sel.full_label).join(",");
+    context.name = document.getElementById("name").value;
+    const sentence = section.template(context);
     
     return sentence;
     
@@ -591,5 +593,5 @@ generateForm(spec);
 //reduce of map
 //return sentence
 //eventHandler moet iets skryf wat se if valid generate report otherwise show what invalid
-
+//getElementById().value
 
