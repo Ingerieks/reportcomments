@@ -1,68 +1,83 @@
 const spec = [{
     "name": "characteristics",
     "section_label": "Characteristics",
-    "template": (context) =>  `${context.name} is a very ${context.combined} boy.`,
+    "template": (context) =>  `${context.name} ${context.combined}.`,
     "items": [
         {
-            "name": "kind ",
-            "short_label": "Kind",
-            "full_label": "kind",
+            "name": "kind_and_generous",
+            "short_label": "Kind and generous",
+            "full_label": " is a very kind and generous young man and it is such a pleasure to have him in our class",
         },
         {
             "name": "funny ",
-            "short_label": "Funny ",
-            "full_label": "has a great sense of humor",
+            "short_label": "Funny and bright",
+            "full_label": "is a bright young boy, who has a great sense of humor",
         },
         {
-            "name": "thoughtful ",
-            "short_label": "Thoughtful ",
-            "full_label": "thoughtful ",
+            "name": "curious_general_knowledge",
+            "short_label": "Curious and good general knowledge",
+            "full_label": "is a curious young man who enjoys sharing lots of interesting facts with his class",
         },
         {
-            "name": "friendly ",
-            "short_label": "Friendly ",
-            "full_label": "friendly ",
+            "name": "thoughtful_and_sweet",
+            "short_label": "Thoughtful and sweet",
+            "full_label": "is a sweet and thoughtful member of our class",
         },
         {
-            "name": "sweet ",
-            "short_label": "Sweet ",
-            "full_label": "sweet",
-
+            "name": "friendly",
+            "short_label": "Friendly and well-mannered",
+            "full_label": "is a very friendly boy and a true Wynberg gentleman",
         },
         {
-            "name": "confident ",
-            "short_label": "Confident ",
-            "full_label": "confident ",
+            "name": "confident",
+            "short_label": "Confident and well-liked",
+            "full_label": "is a confident boy who is popular amongst his peers",
         },
         {
-            "name": "playful ",
-            "short_label": "Playful ",
-            "full_label": "playful ",
+            "name": "playful",
+            "short_label": "Playful and enthusiastic",
+            "full_label": "is a very playful boy who always participates enthusiastically in our class discussions",
         },
         {
-            "name": "strong-willed ",
+            "name": "strong-willed",
             "short_label": "Strong-willed ",
-            "full_label": "strong-willed ",
+            "full_label": "is a bright boy who always speaks his mind",
         },
         {
-            "name": "quiet ",
-            "short_label": "Quiet ",
-            "full_label": "quiet ",
+            "name": "quiet",
+            "short_label": "Quiet and well-mannered",
+            "full_label": "is a quiet young man who always shows excellent manners in class",
         },
         {
             "name": "creative ",
             "short_label": "Creative ",
-            "full_label": "imaginative ",
+            "full_label": "is a very creative member of our class, who always sharing interesting ideas during our class discussions",
+        },
+        
+        {
+            "name": "resilient",
+            "short_label": "Resilient",
+            "full_label": "resilient",
         },
         {
-            "name": "enthusiastic ",
-            "short_label": "Enthusiastic ",
-            "full_label": "enthusiastic ",
+            "name": "happy",
+            "short_label": "Happy",
+            "full_label": "happy",
         },
         {
-            "name": "responsible ",
-            "short_label": "Responsible ",
-            "full_label": "responsible ",
+            "name": "well_mannered",
+            "short_label": "Well mannered",
+            "full_label": "well mannered",
+        },
+        {
+            "name": "sensitive",
+            "short_label": "Sensitive",
+            "full_label": "sensitive",
+        },
+        {
+            "name": "responsible",
+            "short_label": "Responsible",
+            "full_label": "responsible",
         }
     ]
 },
@@ -70,12 +85,12 @@ const spec = [{
 {
     "name": "strengths",
     "section_label": "Strengths",
-    "template": (context) =>  `He ${context.combined} .`,
+    "template": (context) =>  `He ${context.combined}.`,
     "items": [
         {
             "name": "spelling tests",
             "short_label": "Spelling Tests",
-            "full_label": "consistently does well in his weekly phonic tests",
+            "full_label": "does consistently well in his weekly phonic tests and he is able to apply his phonetic skills in his every day writing tasks",
         },
         {
             "name": "spelling",
@@ -86,7 +101,7 @@ const spec = [{
         {
             "name": "reading",
             "short_label": "Reading",
-            "full_label": "is able to read fluently and takes a variety punctuation marks into account while reading aloud",
+            "full_label": "is able to read fluently and takes a variety of punctuation marks into account while reading aloud",
         },
         {
             "name": "reading_comprehension",
@@ -111,7 +126,7 @@ const spec = [{
         {
             "name": "number_operations",
             "short_label": "Number Operations",
-            "full_label": "has a good grasp of the number concepts taught and he is able to apply a variety of strategies to solve different problems",
+            "full_label": "has a good grasp of the number concepts taught and he is able to apply a variety of strategies to solve different mathematical problems",
         },
         {
             "name": "patterns",
@@ -161,6 +176,11 @@ const spec = [{
     "template": (context) =>  `He is making good progress in ${context.combined} and he is learning to apply new skills learned in these areas independently.`,
     "items": [
         {
+            "name": "handwriting",
+            "short_label": "Handwriting",
+            "full_label": "handwriting",
+        },
+        {
             "name": "spelling",
             "short_label": "Spelling",
             "full_label": "spelling",
@@ -188,7 +208,7 @@ const spec = [{
         {
             "name": "speaking",
             "short_label": "Speaking",
-            "full_label": "speaking",
+            "full_label": "oral presentations",
         },
         {
             "name": "number_operations",
@@ -198,7 +218,7 @@ const spec = [{
         {
             "name": "patterns",
             "short_label": "Patterns",
-            "full_label": "patterns",
+            "full_label": "recognising and continuing growing- and moving patterns ",
         },
         {
             "name": "space_and_shape",
@@ -260,12 +280,12 @@ const spec = [{
         {
             "name": "reading_decoding",
             "short_label": "Reading: Decoding",
-            "full_label": "reading: decoding",
+            "full_label": "reading",
         },
         {
             "name": "fluency_and_word_recognition",
             "short_label": "Reading: Fluency and Word Recognition",
-            "full_label": "reading: decoding",
+            "full_label": "reading",
         },
         {
             "name": "reading_comprehension",
@@ -284,8 +304,8 @@ const spec = [{
         },
         {
             "name": "speaking",
-            "short_label": "Speaking",
-            "full_label": "speaking",
+            "short_label": "Oral presentation",
+            "full_label": "oral presentation",
         },
         {
             "name": "number_operations",
@@ -333,16 +353,6 @@ const spec = [{
             "full_label": "afrikaans speaking",
         },
         {
-            "name": "art",
-            "short_label": "Art",
-            "full_label": "art",
-        },
-        {
-            "name": "music",
-            "short_label": "Music",
-            "full_label": "music",
-        },
-        {
             "name": "listening_skills",
             "short_label": "Listening Skills",
             "full_label": "listening skills",
@@ -357,12 +367,12 @@ const spec = [{
 {
     "name": "focus_area",
     "section_label": "Focus Area",
-    "template": (context) => `Next term, I would like to see him ${context.combined} .`,
+    "template": (context) => `Next term, I would like to see him ${context.combined}.`,
     "items": [
         {
             "name": "spelling",
             "short_label": "Spelling",
-            "full_label": "practising and applying phonetic strategies",
+            "full_label": "practising more consistently for his weekly phonic tests and applying what he has learnt in his every day writing tasks",
         },
         {
             "name": "reading_decoding",
@@ -377,7 +387,7 @@ const spec = [{
         {
             "name": "reading_comprehension",
             "short_label": "Reading Comprehension",
-            "full_label": "working on his reading comprehension by practising and internalising the reading strategies taught",
+            "full_label": "work on answering comprehension questions correctly by finding evidence in the text, writing full sentences and using the appropriate punctuation marks",
         },
         {
             "name": "creative_writing",
@@ -387,17 +397,17 @@ const spec = [{
         {
             "name": "language_use",
             "short_label": "Language Use",
-            "full_label": "work on memorising the different parts of speechs and using the correct punctuation marks more consistently",
+            "full_label": "work on memorising the different parts of speech and using the correct punctuation marks more consistently",
         },
         {
             "name": "speaking",
             "short_label": "Speaking",
-            "full_label": "work on speaking more confidently during oral presentations by speaking louder and making consistent eye contact with the audience",
+            "full_label": "work on his oral presentations by being well-prepared, speaking more confidently and making consistent eye contact with the audience",
         },
         {
             "name": "number_operations",
             "short_label": "Number Operations",
-            "full_label": "practise number facts and skip counting daily by making use of songs, number charts and number lines",
+            "full_label": "practise number facts, skip counting daily and making use of number charts and number lines",
         },
         {
             "name": "patterns",
@@ -407,7 +417,7 @@ const spec = [{
         {
             "name": "space_and_shape",
             "short_label": "Space and Shape",
-            "full_label": "practise the spelling of 3-D objects and memorising properties of different 3-D objects",
+            "full_label": "practise the spelling of 2-D shape and 3-D object names and memorising the properties of different 3-D objects",
         },
         {
             "name": "measurement",
@@ -440,19 +450,9 @@ const spec = [{
             "full_label": "work on his Afrikaans speaking by practising more consistently for Afrikaans oral presentations and reading more Afrikaans stories",
         },
         {
-            "name": "art",
-            "short_label": "Art",
-            "full_label": "art",
-        },
-        {
-            "name": "music",
-            "short_label": "Music",
-            "full_label": "music",
-        },
-        {
             "name": "listening_skills",
             "short_label": "Listening Skills",
-            "full_label": "work on developing his listening skills in order to follow and understand instructions more regularly",
+            "full_label": "improve his listening skills in order to follow and understand instructions given in class",
         },
         {
             "name": "attention",
@@ -464,7 +464,7 @@ const spec = [{
 {
     "name": "sign_off",
     "section_label": "Sign Off",
-    "template": (context) => ` , ${context.name}! `,
+    "template": (context) => `${context.combined}, ${context.name}! `,
     "items": [
         {
             "name": "Keep up the hard work",
