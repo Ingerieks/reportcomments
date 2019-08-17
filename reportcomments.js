@@ -511,7 +511,9 @@ const spec = [{
 function generateForm(spec) {
     spec.forEach(function (section) {
         insertHeading(section.section_label);
-
+        
+        insertInstruction(section.section_label);
+       
         section.items.forEach(function (item) {
             insertCheckbox(section, item);
         });
@@ -526,6 +528,10 @@ function generateForm(spec) {
 
 function insertHeading(heading) {
     document.getElementById("form-container").innerHTML += '<h1>'+heading+'</h1>';
+}
+
+function insertInstruction(section) {
+    document.getElementById("form-container").innerHTML += '<h2>Choose one...</h2>';
 }
 
 function insertCheckbox(section, item) {
