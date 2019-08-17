@@ -50,34 +50,34 @@ const spec = [{
         },
         {
             "name": "creative ",
-            "short_label": "Creative ",
-            "full_label": "is a very creative member of our class, who always sharing interesting ideas during our class discussions",
+            "short_label": "Creative",
+            "full_label": "is a very creative boy, who enjoys sharing interesting ideas during our class discussions",
         },
         
         {
             "name": "resilient",
-            "short_label": "Resilient",
-            "full_label": "resilient",
+            "short_label": "tries his best and persevered",
+            "full_label": "can be very proud of the hard work he has given this term and perseverance he has shown in his work",
         },
         {
             "name": "happy",
-            "short_label": "Happy",
-            "full_label": "happy",
+            "short_label": "Happy and eager to please",
+            "full_label": "is a happy young man who is eager to please",
         },
         {
-            "name": "well_mannered",
-            "short_label": "Well mannered",
-            "full_label": "well mannered",
+            "name": "sweet natured",
+            "short_label": "sweet-natured and helpful",
+            "full_label": "sweet-natured boy, who is always willing to offer help to his friends and teacher.",
         },
         {
             "name": "sensitive",
-            "short_label": "Sensitive",
-            "full_label": "sensitive",
+            "short_label": "Sensitive and hard-working",
+            "full_label": "is a sensitive, kind and hardworking young man.",
         },
         {
-            "name": "responsible",
-            "short_label": "Responsible",
-            "full_label": "responsible",
+            "name": "wynberg_gentleman",
+            "short_label": "Wynberg gentleman and a good example",
+            "full_label": "is a true Wynberg gentleman and he is an excellent example to his peers.",
         }
     ]
 },
@@ -88,14 +88,14 @@ const spec = [{
     "template": (context) =>  `He ${context.combined}.`,
     "items": [
         {
-            "name": "spelling tests",
-            "short_label": "Spelling Tests",
-            "full_label": "does consistently well in his weekly phonic tests and he is able to apply his phonetic skills in his every day writing tasks",
+            "name": "phonic tests",
+            "short_label": "Phonic Tests",
+            "full_label": "has worked steadily throughout the term and performs well in his weekly spelling tests in English and Afrikaans.",
         },
         {
             "name": "spelling",
-            "short_label": "Spelling",
-            "full_label": "applies his phonetic knowledge in every day writing tasks with ease",
+            "short_label": "Spelling and punctuation marks",
+            "full_label": "is able to apply his phonetic knowledge in every day writing tasks and he is able to use punctuation marks effectively",
         },
         
         {
@@ -116,7 +116,7 @@ const spec = [{
         {
             "name": "language_use",
             "short_label": "Language Use",
-            "full_label": "has a good grasp of parts of speech, punctuation marks and he applied these skills in his everyday writing tasks with ease",
+            "full_label": "has a good grasp of the parts of speech and punctuation marks and he is able to apply these skills in his everyday writing tasks",
         },
         {
             "name": "speaking",
@@ -136,17 +136,17 @@ const spec = [{
         {
             "name": "space_and_shape",
             "short_label": "Space and Shape",
-            "full_label": "is able to identify a variety of 3-D objects and 2-D shapes and recall object properties with ease",
+            "full_label": "is able to identify a variety of 3-D objects and 2-D shapes and he can recall object properties with ease",
         },
         {
             "name": "measurement",
             "short_label": "Measurement",
-            "full_label": "is able to read digital time as well as an analogue clock with ease",
+            "full_label": "is able to read and record 12hour as well as 24hour time with ease",
         },
         {
             "name": "data_handling",
             "short_label": "Data Handling",
-            "full_label": "does well in solving a variety of problems related to data handling",
+            "full_label": "does well in interpreting and solving a variety of problems related to data handling",
         },
         {
             "name": "afrikaans_reading",
@@ -166,7 +166,7 @@ const spec = [{
         {
             "name": "afrikaans_speaking",
             "short_label": "Afrikaans Speaking",
-            "full_label": "delivered his Afrikaans oral with ease and makes use excellent pronunciation in Afrikaans",
+            "full_label": "delivered his Afrikaans oral with confidence and uses excellent pronunciation in Afrikaans",
         }
     ]
 },
@@ -270,7 +270,7 @@ const spec = [{
 {
     "name": "weaknesses",
     "section_label": "Weaknesses",
-    "template": (context) =>  `${context.name} is still finding ${context.combined} challenging and he will benefit from practicing these concepts daily.`,
+    "template": (context) =>  `${context.name} is still finding  challenging and he will benefit from practicing these concepts daily.`,
     "items": [
         {
             "name": "spelling",
