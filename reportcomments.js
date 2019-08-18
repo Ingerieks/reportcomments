@@ -56,7 +56,7 @@ const spec = [{
         
         {
             "name": "resilient",
-            "short_label": "tries his best and persevered",
+            "short_label": "Tries his best and persevered",
             "full_label": "can be very proud of the hard work he has given this term and perseverance he has shown in his work",
         },
         {
@@ -66,8 +66,8 @@ const spec = [{
         },
         {
             "name": "sweet natured",
-            "short_label": "sweet-natured and helpful",
-            "full_label": "sweet-natured boy, who is always willing to offer help to his friends and teacher.",
+            "short_label": "Sweet-natured and helpful",
+            "full_label": "sweet-natured boy, who is always willing to offer help to his friends and his teacher",
         },
         {
             "name": "sensitive",
@@ -270,7 +270,7 @@ const spec = [{
 {
     "name": "weaknesses",
     "section_label": "Weaknesses",
-    "template": (context) =>  `${context.name} is still finding  challenging and he will benefit from practicing these concepts daily.`,
+    "template": (context) =>  `${context.name} is still finding ${context.combined} challenging and he will benefit from practicing these concepts daily.`,
     "items": [
         {
             "name": "spelling",
