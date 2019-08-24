@@ -5,79 +5,79 @@ const spec = [{
     "items": [
         {
             "name": "kind_and_generous",
-            "short_label": "Kind and generous",
+            "short_label": "Kind",
             "full_label": " is a very kind and generous young man and it is such a pleasure to have him in our class",
         },
         {
             "name": "funny ",
-            "short_label": "Funny and bright",
+            "short_label": "Funny",
             "full_label": "is a bright young boy, who has a great sense of humor",
         },
         {
             "name": "curious_general_knowledge",
-            "short_label": "Curious and good general knowledge",
+            "short_label": "Curious",
             "full_label": "is a curious young man who enjoys sharing lots of interesting facts with his class",
         },
         {
             "name": "thoughtful_and_sweet",
-            "short_label": "Thoughtful and sweet",
+            "short_label": "Thoughtful",
             "full_label": "is a sweet and thoughtful member of our class",
         },
         {
-            "name": "friendly",
-            "short_label": "Friendly and well-mannered",
+            "name": "well_mannered",
+            "short_label": "Well-mannered",
             "full_label": "is a very friendly boy and a true Wynberg gentleman",
         },
         {
             "name": "confident",
-            "short_label": "Confident and well-liked",
+            "short_label": "Confident",
             "full_label": "is a confident boy who is popular amongst his peers",
         },
         {
             "name": "playful",
-            "short_label": "Playful and enthusiastic",
+            "short_label": "Playful",
             "full_label": "is a very playful boy who always participates enthusiastically in our class discussions",
         },
         {
-            "name": "strong-willed",
-            "short_label": "Strong-willed ",
-            "full_label": "is a bright boy who always speaks his mind",
+            "name": "hard_worker",
+            "short_label": "Hard-worker",
+            "full_label": "is a very hard-working and responsible boy",
         },
         {
             "name": "quiet",
-            "short_label": "Quiet and well-mannered",
+            "short_label": "Quiet",
             "full_label": "is a quiet young man who always shows excellent manners in class",
         },
         {
             "name": "creative ",
             "short_label": "Creative",
-            "full_label": "is a very creative boy, who enjoys sharing interesting ideas during our class discussions",
+            "full_label": "is a very creative boy, who enjoys sharing interesting ideas with the class",
         },
         
         {
             "name": "resilient",
-            "short_label": "Tries his best and persevered",
-            "full_label": "can be very proud of the hard work he has given this term and perseverance he has shown in his work",
+            "short_label": "Persevered",
+            "full_label": "can be very proud of the hard work and perseverance he has shown this term",
         },
         {
             "name": "happy",
-            "short_label": "Happy and eager to please",
+            "short_label": "Happy",
             "full_label": "is a happy young man who is eager to please",
         },
         {
-            "name": "sweet natured",
-            "short_label": "Sweet-natured and helpful",
+            "name": "sweet_natured",
+            "short_label": "Sweet-natured",
             "full_label": "sweet-natured boy, who is always willing to offer help to his friends and his teacher",
         },
         {
             "name": "sensitive",
-            "short_label": "Sensitive and hard-working",
+            "short_label": "Sensitive",
             "full_label": "is a sensitive, kind and hardworking young man.",
         },
         {
             "name": "wynberg_gentleman",
             "short_label": "Wynberg gentleman and a good example",
-            "full_label": "is a true Wynberg gentleman and he is an excellent example to his peers.",
+            "full_label": "is a true Wynberg gentleman and an excellent example to his peers",
         }
     ]
 },
@@ -90,7 +90,7 @@ const spec = [{
         {
             "name": "phonic tests",
             "short_label": "Phonic Tests",
-            "full_label": "has worked steadily throughout the term and performs well in his weekly spelling tests in English and Afrikaans.",
+            "full_label": "has worked steadily throughout the term and performs well in his weekly spelling tests in English and Afrikaans",
         },
         {
             "name": "spelling",
@@ -253,7 +253,7 @@ const spec = [{
         {
             "name": "afrikaans_speaking",
             "short_label": "Afrikaans Speaking",
-            "full_label": "afrikaans speaking",
+            "full_label": "Afrikaans pronunciation",
         },
         {
             "name": "art",
