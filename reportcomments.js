@@ -73,7 +73,7 @@ const spec = [{
         {
             "name": "sensitive",
             "short_label": "Sensitive",
-            "full_label": "is a sensitive, kind and hardworking young man.",
+            "full_label": "is a sensitive, kind and hardworking young man",
         },
         {
             "name": "wynberg_gentleman",
@@ -97,7 +97,7 @@ const spec = [{
         {
             "name": "spelling",
             "short_label": "Spelling and punctuation marks",
-            "full_label": "is able to apply his phonetic knowledge in every day writing tasks and he is able to use punctuation marks effectively",
+            "full_label": "is able to apply his phonetic knowledge in everyday writing tasks and he is able to use punctuation marks effectively",
         },
         
         {
