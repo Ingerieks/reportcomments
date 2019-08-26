@@ -175,7 +175,7 @@ const spec = [{
 {
     "name": "progress",
     "section_label": "Progressed in",
-    "instruction": "Choose two...",
+    "instruction": "Choose at least two...",
     "template": (context) =>  `He is making good progress in ${context.combined} and he is learning to apply new skills learned in these areas independently.`,
     "items": [
         {
@@ -206,7 +206,7 @@ const spec = [{
         {
             "name": "language_use",
             "short_label": "Language Use",
-            "full_label": "language use",
+            "full_label": "Language Use",
         },
         {
             "name": "speaking",
@@ -310,7 +310,7 @@ const spec = [{
         {
             "name": "number_operations",
             "short_label": "Number Operations",
-            "full_label": "still finds basic number operations challenging and next term, I would like to see him practise number facts and skip counting every day. He will also have to practice solving mathematical problems using the different resources that are available to him",
+            "full_label": "still finds basic number operations challenging and next term, I would like to see him practice number facts and skip counting every day. He will also have to practice solving mathematical problems using the different resources that are available to him",
         },
         {
             "name": "patterns",
@@ -320,12 +320,12 @@ const spec = [{
         {
             "name": "space_and_shape",
             "short_label": "Space and Shape",
-            "full_label": "finds identifying and naming 2-D shapes and 3-D objects' properties difficult. Next term I would like to see him practise the spelling names and memorising the properties of different 3-D objects",
+            "full_label": "finds identifying and naming 2-D shapes and 3-D objects' properties difficult. Next term I would like to see him practice the spelling names and memorising the properties of different 3-D objects",
         },
         {
             "name": "measurement",
             "short_label": "Measurement",
-            "full_label": "is still finding telling and recording the time difficult and next term I would like to see him practise telling the time every day and he will also need to work on converting 12 hour time to 24 hour time",
+            "full_label": "is still finding telling and recording the time difficult and next term I would like to see him practice telling the time every day and he will also need to work on converting 12 hour time to 24 hour time",
         },
         {
             "name": "word_problems",
@@ -497,7 +497,13 @@ function getCheckbox(section, item) {
 
 function writeSentence(section, selections) {
     const context = {};
-    context.combined = selections.map(sel => sel.full_label).join(",");
+    if (selections.length == 1) {
+        context.combined = selections[0].full_label;
+    } else {
+        const last = selections.pop();
+        context.combined = selections.map(sel => sel.full_label).join(", ") + " and " + last.full_label;
+    }
+   
     context.name = document.getElementById("name").value;
     const sentence = section.template(context);
     
