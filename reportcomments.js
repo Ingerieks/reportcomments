@@ -399,7 +399,7 @@ const spec = [{
         {
             "name": "Show me your best every day. Well done",
             "short_label": "Show me your best every day. Well done",
-            "full_label": "Show me your best every day",
+            "full_label": "Show me your best every day. Well done",
         },
         {
             "name": "You can do it",
