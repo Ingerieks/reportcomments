@@ -269,8 +269,8 @@ const spec = [{
     "items": [
         {
             "name": "phonics",
-            "short_label": "Phonic Tests",
-            "full_label": "will have to work hard in improving his spelling and phonic tests. Next term, I would like to see him apply strategies that we have learnt in class and work on breaking words into more managable parts when trying to spell bigger words",
+            "short_label": "Phonics Tests",
+            "full_label": "will have to work hard in improving his spelling and phonics tests. Next term, I would like to see him apply strategies that we have learnt in class and work on breaking words into more manageable parts when trying to spell bigger words",
         },
         {
             "name": "spelling",
@@ -280,12 +280,12 @@ const spec = [{
         {
             "name": "reading_decoding",
             "short_label": "Reading: Decoding",
-            "full_label": "still finds reading and decoding tricky words challenging. Next term, I would like to see him practicing decoding strategies, such as breaking up bigger words into more manageable parts and rereading paragraphs",
+            "full_label": "still finds reading and decoding tricky words challenging. Next term, I would like to see him practice decoding strategies, such as breaking up bigger words into more manageable parts and rereading paragraphs",
         },
         {
             "name": "fluency_and_word_recognition",
             "short_label": "Reading: Fluency and Word Recognition",
-            "full_label": "stills finds reading fluently challenging. Next term, I would like to see him praciticing sight words more regularly and practice finding and decoding tricky words before starting the reading",
+            "full_label": "stills finds reading fluently challenging. Next term, I would like to see him practice sight words more regularly and practice finding and decoding tricky words before starting the reading",
         },
         {
             "name": "reading_comprehension",
@@ -315,7 +315,7 @@ const spec = [{
         {
             "name": "patterns",
             "short_label": "Patterns",
-            "full_label": "finds completing growing-, moving- and number patterns challening. Next term, I would like to see him work on practising these patterns using concrete objects and strategies that were learnt in class",
+            "full_label": "finds completing growing-, moving- and number patterns challenging. Next term, I would like to see him work on practising these patterns using concrete objects and strategies that were learned in class",
         },
         {
             "name": "space_and_shape",
@@ -340,17 +340,17 @@ const spec = [{
         {
             "name": "afrikaans_reading",
             "short_label": "Afrikaans Reading",
-            "full_label": "finds Afrikaans reading challening and he would benefit from taking out Afrikaans reading books from the Library and practising Afrikaans sight words regularly",
+            "full_label": "finds Afrikaans reading challenging and he would benefit from taking out Afrikaans reading books from the Library and practising Afrikaans sight words regularly",
         },
         {
             "name": "afrikaans_spelling",
             "short_label": "Afrikaans Spelling",
-            "full_label": "finds afrikaans spelling challengin and he would benefit from practicing his Afrikaans spelling more consistently and reading Afrikaans books in order to improve his Afrikaans phonic abilities",
+            "full_label": "finds afrikaans spelling challenging and he would benefit from practicing his Afrikaans spelling more consistently and reading Afrikaans books in order to improve his Afrikaans phonic abilities",
         },
         {
             "name": "afrikaans_writing",
             "short_label": "Afrikaans Writing",
-            "full_label": "finds Afrikaans sentence construction challengig and he would benefit from using his weekly Afrikaans phonic words to write simple sentences and reading them aloud",
+            "full_label": "finds Afrikaans sentence construction challenging and he would benefit from using his weekly Afrikaans phonic words to write simple sentences and reading them aloud",
         },
         {
             "name": "afrikaans_speaking",
