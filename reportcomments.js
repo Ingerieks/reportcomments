@@ -1,6 +1,7 @@
 const spec = [{
     "name": "characteristics",
     "section_label": "Characteristics",
+    "instruction": "Choose one...",
     "template": (context) =>  `${context.name} ${context.combined}.`,
     "items": [
         {
@@ -76,7 +77,7 @@ const spec = [{
         },
         {
             "name": "wynberg_gentleman",
-            "short_label": "Wynberg gentleman and a good example",
+            "short_label": "Wynberg gentleman",
             "full_label": "is a true Wynberg gentleman and an excellent example to his peers",
         }
     ]
@@ -85,6 +86,7 @@ const spec = [{
 {
     "name": "strengths",
     "section_label": "Strengths",
+    "instruction": "Choose one...",
     "template": (context) =>  `He ${context.combined}.`,
     "items": [
         {
@@ -173,6 +175,7 @@ const spec = [{
 {
     "name": "progress",
     "section_label": "Progressed in",
+    "instruction": "Choose two...",
     "template": (context) =>  `He is making good progress in ${context.combined} and he is learning to apply new skills learned in these areas independently.`,
     "items": [
         {
@@ -228,7 +231,7 @@ const spec = [{
         {
             "name": "measurement",
             "short_label": "Measurement",
-            "full_label": "measurement",
+            "full_label": "in telling the time",
         },
         {
             "name": "data_handling",
@@ -238,119 +241,121 @@ const spec = [{
         {
             "name": "afrikaans_reading",
             "short_label": "Afrikaans Reading",
-            "full_label": "afrikaans reading",
+            "full_label": "Afrikaans reading",
         },
         {
             "name": "afrikaans_spelling",
             "short_label": "Afrikaans Spelling",
-            "full_label": "afrikaans spelling",
+            "full_label": "Afrikaans spelling",
         },
         {
             "name": "afrikaans_writing",
             "short_label": "Afrikaans Writing",
-            "full_label": "afrikaans writing",
+            "full_label": "Afrikaans writing",
         },
         {
             "name": "afrikaans_speaking",
             "short_label": "Afrikaans Speaking",
             "full_label": "Afrikaans pronunciation",
         },
-        {
-            "name": "art",
-            "short_label": "Art",
-            "full_label": "art",
-        },
-        {
-            "name": "music",
-            "short_label": "Music",
-            "full_label": "music",
-        }
+      
     ]
 },
 {
     "name": "weaknesses",
     "section_label": "Weaknesses",
-    "template": (context) =>  `${context.name} is still finding ${context.combined} challenging and he will benefit from practicing these concepts daily.`,
+    "instruction": "Choose one...",
+    "template": (context) =>  `${context.name} ${context.combined}.`,
     "items": [
+        {
+            "name": "phonics",
+            "short_label": "Phonic Tests",
+            "full_label": "will have to work hard in improving his spelling and phonic tests. Next term, I would like to see him apply strategies that we have learnt in class and work on breaking words into more managable parts when trying to spell bigger words",
+        },
         {
             "name": "spelling",
             "short_label": "Spelling",
-            "full_label": "spelling",
+            "full_label": "finds it challenging to apply his phonetic knowledge to his every day writing tasks. Next term, I would like to see him work on applying this knowledge, as well as making use of a dictionary or asking for help when spelling tricky words more regularly",
         },
         {
             "name": "reading_decoding",
             "short_label": "Reading: Decoding",
-            "full_label": "reading",
+            "full_label": "still finds reading and decoding tricky words challenging. Next term, I would like to see him practicing decoding strategies, such as breaking up bigger words into more manageable parts and rereading paragraphs",
         },
         {
             "name": "fluency_and_word_recognition",
             "short_label": "Reading: Fluency and Word Recognition",
-            "full_label": "reading",
+            "full_label": "stills finds reading fluently challenging. Next term, I would like to see him praciticing sight words more regularly and practice finding and decoding tricky words before starting the reading",
         },
         {
             "name": "reading_comprehension",
             "short_label": "Reading Comprehension",
-            "full_label": "reading comprehension",
+            "full_label": "still finds reading comprehension challenging. Next term, I would like to see him work on re-reading paragraphs, answering questions correctly by finding evidence in the text and using the appropriate punctuation marks",
         },
         {
             "name": "creative_writing",
             "short_label": "Creative Writing",
-            "full_label": "creative writing",
+            "full_label": "still finds creative writing and sentence construction challenging. Next term, I would like to see him work on paying closer attention to his sentence construction and use of punctuation marks by reading his writing out loud before handing in his work",
         },
         {
             "name": "language_use",
             "short_label": "Language Use",
-            "full_label": "language use",
+            "full_label": "still finds identifying the different parts of speech challenging. Next term, I would like to see him practice differentiating between the different parts of speech, using speech marks and tenses correctly",
         },
         {
             "name": "speaking",
             "short_label": "Oral presentation",
-            "full_label": "oral presentation",
+            "full_label": "finds oral presentations particularly challenging and next term I would like to see him work on his oral presentations by being well-prepared and work on making more consistent eye contact with the audience",
         },
         {
             "name": "number_operations",
             "short_label": "Number Operations",
-            "full_label": "number operations",
+            "full_label": "still finds basic number operations challenging and next term, I would like to see him practise number facts and skip counting every day. He will also have to practice solving mathematical problems using the different resources that are available to him",
         },
         {
             "name": "patterns",
             "short_label": "Patterns",
-            "full_label": "patterns",
+            "full_label": "finds completing growing-, moving- and number patterns challening. Next term, I would like to see him work on practising these patterns using concrete objects and strategies that were learnt in class",
         },
         {
             "name": "space_and_shape",
             "short_label": "Space and Shape",
-            "full_label": "space and shape",
+            "full_label": "finds identifying and naming 2-D shapes and 3-D objects' properties difficult. Next term I would like to see him practise the spelling names and memorising the properties of different 3-D objects",
         },
         {
             "name": "measurement",
             "short_label": "Measurement",
-            "full_label": "measurement",
+            "full_label": "is still finding telling and recording the time difficult and next term I would like to see him practise telling the time every day and he will also need to work on converting 12 hour time to 24 hour time",
+        },
+        {
+            "name": "word_problems",
+            "short_label": "Word Problems",
+            "full_label": "finds it difficult to apply strategies to solve different word problems. Next term, I would like to see him work on using strategies such as breaking the problem into smaller parts, visualising and finding key words to solve these problems",
         },
         {
             "name": "data_handling",
             "short_label": "Data Handling",
-            "full_label": "data handling",
+            "full_label": "finds it difficult to apply strategies to solve problems involving a data set. Next term, I would like to see him work on using strategies such as visualising and finding key words to solve these problems",
         },
         {
             "name": "afrikaans_reading",
             "short_label": "Afrikaans Reading",
-            "full_label": "afrikaans reading",
+            "full_label": "finds Afrikaans reading challening and he would benefit from taking out Afrikaans reading books from the Library and practising Afrikaans sight words regularly",
         },
         {
             "name": "afrikaans_spelling",
             "short_label": "Afrikaans Spelling",
-            "full_label": "afrikaans spelling",
+            "full_label": "finds afrikaans spelling challengin and he would benefit from practicing his Afrikaans spelling more consistently and reading Afrikaans books in order to improve his Afrikaans phonic abilities",
         },
         {
             "name": "afrikaans_writing",
             "short_label": "Afrikaans Writing",
-            "full_label": "afrikaans writing",
+            "full_label": "finds Afrikaans sentence construction challengig and he would benefit from using his weekly Afrikaans phonic words to write simple sentences and reading them aloud",
         },
         {
             "name": "afrikaans_speaking",
             "short_label": "Afrikaans Speaking",
-            "full_label": "afrikaans speaking",
+            "full_label": "finds Afrikaans oral presentations and Afrikaans pronunciation very challenging. I would like to see him work on his Afrikaans speaking by practising more consistently for Afrikaans oral presentations and reading more Afrikaans stories",
         },
         {
             "name": "listening_skills",
@@ -359,111 +364,16 @@ const spec = [{
         },
         {
             "name": "attention",
-            "short_label": "Attention",
-            "full_label": "attention",
+            "short_label": "Attention to detail",
+            "full_label": "n",
         }
     ]
 },
-{
-    "name": "focus_area",
-    "section_label": "Focus Area",
-    "template": (context) => `Next term, I would like to see him ${context.combined}.`,
-    "items": [
-        {
-            "name": "spelling",
-            "short_label": "Spelling",
-            "full_label": "practising more consistently for his weekly phonic tests and applying what he has learnt in his every day writing tasks",
-        },
-        {
-            "name": "reading_decoding",
-            "short_label": "Reading: Decoding",
-            "full_label": "practising decoding strategies, such as breaking up bigger words into more readable parts",
-        },
-        {
-            "name": "fluency_and_word_recognition",
-            "short_label": "Reading: Fluency and Word Recognition",
-            "full_label": "improving his reading fluency by more consistent reading at home and practising sight words regularly",
-        },
-        {
-            "name": "reading_comprehension",
-            "short_label": "Reading Comprehension",
-            "full_label": "work on answering comprehension questions correctly by finding evidence in the text, writing full sentences and using the appropriate punctuation marks",
-        },
-        {
-            "name": "creative_writing",
-            "short_label": "Creative Writing",
-            "full_label": "improving his sentence construction and use of punctuation marks during creative writing",
-        },
-        {
-            "name": "language_use",
-            "short_label": "Language Use",
-            "full_label": "work on memorising the different parts of speech and using the correct punctuation marks more consistently",
-        },
-        {
-            "name": "speaking",
-            "short_label": "Speaking",
-            "full_label": "work on his oral presentations by being well-prepared, speaking more confidently and making consistent eye contact with the audience",
-        },
-        {
-            "name": "number_operations",
-            "short_label": "Number Operations",
-            "full_label": "practise number facts, skip counting daily and making use of number charts and number lines",
-        },
-        {
-            "name": "patterns",
-            "short_label": "Patterns",
-            "full_label": "practise completing moving and growing patterns, using concrete objects",
-        },
-        {
-            "name": "space_and_shape",
-            "short_label": "Space and Shape",
-            "full_label": "practise the spelling of 2-D shape and 3-D object names and memorising the properties of different 3-D objects",
-        },
-        {
-            "name": "measurement",
-            "short_label": "Measurement",
-            "full_label": "practise telling the time daily, working with number lines and using different measurement tools more regularly",
-        },
-        {
-            "name": "word_problems",
-            "short_label": "Word Problems",
-            "full_label": "work on solving word problems independently, by practising and applying the different strategies taught in class",
-        },
-        {
-            "name": "afrikaans_reading",
-            "short_label": "Afrikaans Reading",
-            "full_label": "taking out Afrikaans reading books from the Library and practising Afrikaans sight words regularly",
-        },
-        {
-            "name": "afrikaans_spelling",
-            "short_label": "Afrikaans Spelling",
-            "full_label": "practise Afrikaans spelling more consistently in order to improve his Afrikaans phonic skills",
-        },
-        {
-            "name": "afrikaans_writing",
-            "short_label": "Afrikaans Writing",
-            "full_label": "work on writing sentences in Afrikaans by using a sentence patterning chart to write simple sentences about a picture",
-        },
-        {
-            "name": "afrikaans_speaking",
-            "short_label": "Afrikaans Speaking",
-            "full_label": "work on his Afrikaans speaking by practising more consistently for Afrikaans oral presentations and reading more Afrikaans stories",
-        },
-        {
-            "name": "listening_skills",
-            "short_label": "Listening Skills",
-            "full_label": "improve his listening skills in order to follow and understand instructions given in class",
-        },
-        {
-            "name": "attention",
-            "short_label": "Attention",
-            "full_label": "attention",
-        }
-    ]
-}, 
+
 {
     "name": "sign_off",
     "section_label": "Sign Off",
+    "instruction": "Choose one...",
     "template": (context) => `${context.combined}, ${context.name}! `,
     "items": [
         {
@@ -512,8 +422,9 @@ function generateForm(spec) {
     spec.forEach(function (section) {
         insertHeading(section.section_label);
         
-        insertInstruction(section.section_label);
-       
+        insertInstruction(section.instruction);
+
+               
         section.items.forEach(function (item) {
             insertCheckbox(section, item);
         });
@@ -530,9 +441,12 @@ function insertHeading(heading) {
     document.getElementById("form-container").innerHTML += '<h1>'+heading+'</h1>';
 }
 
-function insertInstruction(section) {
-    document.getElementById("form-container").innerHTML += '<h2>Choose one...</h2>';
+function insertInstruction(instruction) {
+    document.getElementById("form-container").innerHTML += `<h2>${instruction}</h2>`;
 }
+
+
+
 
 function insertCheckbox(section, item) {
     let formContainer = document.getElementById("form-container");
