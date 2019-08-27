@@ -325,7 +325,7 @@ const spec = [{
         {
             "name": "measurement",
             "short_label": "Measurement",
-            "full_label": "is still finding telling and recording the time difficult and next term I would like to see him practice telling the time every day and he will also need to work on converting 12 hour time to 24 hour time",
+            "full_label": "is still finding telling and recording the time difficult. Next term, I would like to see him practice telling the time every day and he will also need to work on converting 12 hour time to 24 hour time",
         },
         {
             "name": "word_problems",
